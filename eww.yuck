@@ -1,0 +1,95 @@
+;;; Active Indicator
+(defwindow active-indicator
+	:geometry (geometry
+		:x 80
+		:y 80
+		:width 20
+		:height 20)
+	:stacking "fg"
+	:exclusive false
+	:focusable false
+	:monitor 0
+	:visible true
+	(active-indicator))
+
+(defwidget active-indicator []
+	(box :class "active-dot" :orientation "vertical"
+		(label :text "+")))
+
+;;; Modal
+(defwindow modal
+	:geometry (geometry
+		:x "0%"
+		:y "0%"
+		:width 540
+		:height 269
+		:anchor "center")
+	:stacking "fg"
+	:exclusive true
+	:focusable false
+	:monitor 0
+	:visible true
+	:windowtype "dialog"
+	(modal))
+
+(defwidget modal []
+	(box :class "modal-wrapper" :orientation "vertical"
+		:height "100%"
+		:width "100%"
+		:vexpand true
+		:hexpand true
+		:homogenous false
+		:space-evenly false
+		:name "modal"
+		(box :class "modal-body" :orientation "vertical" 
+			:vexpand true
+			:hexpand true
+			(box :class "modal-header" :orientation "vertical"
+			(label :text "Create Token" :xalign 0))
+			(box :class "modal-text" :orientation "vertical"
+			(label :text "Enter a unique name for your token to differentiate it from other tokens and then select the scope."
+				:xalign 0
+				:wrap true
+				:wrap-mode "word"
+				:show-truncated false))
+			(box :class "modal-p" :orientation "vertical"
+			(label :text "Some content contained within the modal." :xalign 0)))
+		(box :class "modal-actions"
+			:orientation "horizontal"
+			:vexpand true
+			:hexpand true
+			:space-evenly true
+			:valign "end"
+			:spacing 340
+
+			(button
+				:class "modal-button-cancel"
+				:xalign "left"
+				:onclick "eww close modal"
+			(label :text "Cancel"))
+			(button 
+				:class "modal-button-accept"
+				:xalign "right"
+				:onclick "eww close modal"
+				:cursor "pointer"
+			(label :text "Accept")))))
+
+;;; Search bar
+(defwindow search
+	:geometry (geometry
+		:x "0%"
+		:y "0%"
+		:width "50%"
+		:height "10%"
+		:anchor "center")
+	:stacking "fg"
+	:exclusive true
+	:focusable false
+	:monitor 0
+	:visible true
+	:windowtype "dialog"
+	(search))
+
+(defwidget search
+
+)
