@@ -89,7 +89,3 @@
 	:visible true
 	:windowtype "dialog"
 	(search))
-
-(defwidget search
-
-)
