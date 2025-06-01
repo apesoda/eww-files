@@ -25,23 +25,42 @@
                 :name "session-menu"
                 (box :class "sm-body" :orientation "horizontal"
 			(box :class "sm-label" :orientation "horizontal"
-                		(label :text "Choose: "
+                		       :space-evenly false
 				       :truncate false
+				       :vexpand true
+                		       :space-evenly false
+				       :hexpand true
+				       :xalign 0
+                		(label :text "Choose:"
 				       :show-truncated false ))
 			(box :class "sm-button-list" :orientation "horizontal"
+					:vexpand true
+					:hexpand true
+                                        :space-evenly false
+				        :xalign 0
 				(button :class "sm-button"
-					(label :text "L" 
-					       :truncate false
+					:onclick "swaylock && eww close session-menu"
+				        :xalign 0
+					(label :text "L"
 					       :show-truncated false ))
 				(button :class "sm-button"
+					:vexpand true
+				        :xalign 0
+					:hexpand true
 					(label :text "E"
 					       :truncate false
 					       :show-truncated false))
 				(button :class "sm-button"
+					:vexpand true
+					:hexpand true
+				        :xalign 0
 					(label :text "R"
 					       :truncate false
 					       :show-truncated false))
 				(button :class "sm-button"
+					:vexpand true
+				        :xalign 0
+					:hexpand true
 					(label :text "H"
 					       :truncate false
 					       :show-truncated false))
