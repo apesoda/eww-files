@@ -23,6 +23,26 @@
                 :homogenous false
                 :space-evenly false
                 :name "session-menu"
-                (box :class "sm-body" :orientation "verticel"
-                (label :text "Hi twin"
-                ))))
+                (box :class "sm-body" :orientation "horizontal"
+			(box :class "sm-label" :orientation "horizontal"
+                		(label :text "Choose: "
+				       :truncate false
+				       :show-truncated false ))
+			(box :class "sm-button-list" :orientation "horizontal"
+				(button :class "sm-button"
+					(label :text "L" 
+					       :truncate false
+					       :show-truncated false ))
+				(button :class "sm-button"
+					(label :text "E"
+					       :truncate false
+					       :show-truncated false))
+				(button :class "sm-button"
+					(label :text "R"
+					       :truncate false
+					       :show-truncated false))
+				(button :class "sm-button"
+					(label :text "H"
+					       :truncate false
+					       :show-truncated false))
+			))))
