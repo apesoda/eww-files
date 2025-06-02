@@ -28,7 +28,6 @@
                 		       :space-evenly false
 				       :truncate false
 				       :vexpand true
-                		       :space-evenly false
 				       :hexpand true
 				       :xalign 0
                 		(label :text "Choose:"

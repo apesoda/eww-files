@@ -5,6 +5,7 @@
 
 ; Modal
 (include "./widgets/modal/modal.yuck")
+(include "./widgets/modal-logout/modal-logout.yuck")
 
 ;;; Active Indicator
 (defwindow active-indicator
