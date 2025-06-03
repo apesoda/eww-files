@@ -7,6 +7,9 @@
 (include "./widgets/modal/modal.yuck")
 (include "./widgets/modal-logout/modal-logout.yuck")
 
+;;; Set vars
+(defvar img_warn "widgets/images/warning.svg")
+
 ;;; Active Indicator
 (defwindow active-indicator
 	:geometry (geometry

@@ -38,7 +38,7 @@
 				:spacing 10
 				:xalign 0
 				:justify "start"
-				(image :path "/home/craig/.config/eww/widgets/images/warning.svg"
+				(image :path img_warn
 				       	:fill-svg "#F1A10D"
 				       	:xalign 0
 					:halign "start"
