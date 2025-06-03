@@ -24,8 +24,6 @@
                 :space-evenly false
                 :name "modal"
                 (box :class "modal-body" :orientation "vertical"
-                        :vexpand true
-                        :hexpand true
                         (box :class "modal-header" :orientation "vertical"
                         (label :text "Log out from user session" :xalign 0))
                         (box :class "modal-text" :orientation "vertical"
@@ -37,17 +35,12 @@
                         (box :class "modal-p-warning"
 				:orientation "horizontal"
 				:space-evenly false
-				:hexpand true
-				:vexpand true
-				:spacing 0
+				:spacing 10
 				:xalign 0
 				:justify "start"
 				(image :path "/home/craig/.config/eww/widgets/images/warning.svg"
 				       	:fill-svg "#F1A10D"
 				       	:xalign 0
-					:image-height 16
-					:hexpand true
-					:vexpand true
 					:halign "start"
 					:space-evenly false)
                         	(label :text "All windows will be closed, unsaved work will be lost."
@@ -70,6 +63,6 @@
                         (button
                                 :class "modal-button-accept"
                                 :xalign "right"
-                                :onclick "exit"
+                                :onclick "hyprctl dispatch exit"
                                 :cursor "pointer"
                         (label :text "Log Out")))))
